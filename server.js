@@ -1,10 +1,12 @@
 /**
  * Created by BlackWolf on 05/17/17.
  */
+var config  =require('./config.json');
 var http    =require('http');
 var express =require('express');
 
 var app = express();
+app.set('PORT')
 app.all('*', function (req, res, next) {
     console.log(req.method + " " + req.url);
     next();
