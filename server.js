@@ -33,3 +33,7 @@ app.all('*', function (request, response, next) {
 })
 app.use('/api/v1', require('./routes/routes_api_v1'));
 app.use('/api/v2', require('./routes/routes_api_v2'));
+
+
+
+module.exports = app;
